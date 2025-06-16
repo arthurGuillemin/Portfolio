@@ -4,4 +4,8 @@
   --pink-600 : #E70FAA;
   --blue-400 : #4F81F2;
   --gradient : linear-gradient(#E70FAA , #4F81F2 );
+  --blue-dark: #1f3b9a;
+  --bg-light: rgba(255 255 255 / 0.15);
+  --bg-dark: rgba(31 59 154 / 0.9);
+  --glow: 0 0 8px rgba(79, 129, 242, 0.6);
 }
