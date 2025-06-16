@@ -1,0 +1,29 @@
+.WorkSection {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Centered {
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.Title {
+  font-size: 3rem;
+  color: #1f3b9a;
+  margin-bottom: 1rem;
+}
+
+.Text {
+  font-size: 1.25rem;
+  color: #444;
+}

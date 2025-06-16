@@ -46,8 +46,8 @@ function Home() {
             Passionate about creating impactful user experiences and backend architectures.
           </p>
           <div className={styles.Buttons}>
-            <a href="#projects" className={styles.PrimaryButton}>View Projects</a>
-            <a href="#contact" className={styles.SecondaryButton}>Contact Me</a>
+            <a href="/projects" className={styles.PrimaryButton}>View Projects</a>
+            <a href="/contact" className={styles.SecondaryButton}>Contact Me</a>
           </div>
           <div className={styles.Socials}>
             <a href="https://github.com/arthurGuillemin">
