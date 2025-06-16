@@ -1,0 +1,17 @@
+@import '../../assets//token.css';
+
+
+.navlinks {
+  display: flex;
+  gap: 3rem;
+  padding-top: 3rem;
+  justify-content: flex-end;
+  margin-right: 15rem;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: var(--headerTextColor);
+  font-weight: bold;
+  font-size: x-large;
+}

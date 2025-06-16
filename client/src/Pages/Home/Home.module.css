@@ -1,0 +1,195 @@
+@import '../../assets/token.css';
+
+.HeroSection {
+  position: relative;
+  padding: 4rem 2rem;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.TextBlock {
+  max-width: 500px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.Greeting,
+.Intro {
+  font-size: 1.8rem;
+  margin: 0;
+  color: var(--mainTextColor);
+}
+
+.Name {
+  font-size: 3rem;
+  font-weight: bold;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.Role {
+  font-size: 1.8rem;
+  color: var(--mainTextColor);
+}
+
+.Tagline {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.Buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.PrimaryButton, .SecondaryButton {
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+.PrimaryButton {
+  background: var(--gradient);
+  color: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.SecondaryButton {
+  border: 2px solid var(--mainTextColor);
+  color: var(--mainTextColor);
+}
+
+.SecondaryButton:hover {
+  background-color: #f2f2f2;
+}
+
+.Socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.Socials img {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.Socials img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+.ProfilePicWrapper {
+  width: 260px;
+  height: 260px;
+  padding: 5px;
+  border-radius: 50%;
+  background: var(--gradient);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  animation: popIn 1.2s ease-out;
+}
+
+.ProfilePic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.Wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: url('/wave.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.TextBlock p,
+.TextBlock h1 {
+  animation: slideInLeft 0.8s ease forwards;
+  opacity: 0;
+}
+
+.TextBlock p:nth-child(1) { animation-delay: 0.1s; }
+.TextBlock p:nth-child(2) { animation-delay: 0.2s; }
+.TextBlock h1           { animation-delay: 0.3s; }
+.TextBlock p:nth-child(4) { animation-delay: 0.4s; }
+.TextBlock p:nth-child(5) { animation-delay: 0.5s; }
+
+.Buttons a {
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.Buttons a:nth-child(1) { animation-delay: 0.7s; }
+.Buttons a:nth-child(2) { animation-delay: 0.8s; }
+
+.Socials a {
+  opacity: 0;
+  animation: scaleIn 0.6s ease forwards;
+}
+
+.Socials a:nth-child(1) { animation-delay: 1s; }
+.Socials a:nth-child(2) { animation-delay: 1.1s; }
+
+.ProfilePicWrapper {
+  animation: popIn 1.2s ease-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}

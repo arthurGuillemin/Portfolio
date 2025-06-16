@@ -1,0 +1,7 @@
+:root{
+  --mainTextColor : #42446b ;
+  --headerTextColor: #666666;
+  --pink-600 : #E70FAA;
+  --blue-400 : #4F81F2;
+  --gradient : linear-gradient(#E70FAA , #4F81F2 );
+}
