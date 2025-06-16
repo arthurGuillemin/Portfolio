@@ -20,7 +20,7 @@ function Home() {
           minWidth: 200.0,
           scale: 1.0,
           scaleMobile: 1.0,
-          color: 0x0066ff,           
+          color: 0x4F81F2,           
           backgroundColor: 0xfdfdfd,  
           points: 12.0,               
           maxDistance: 25.0,          
