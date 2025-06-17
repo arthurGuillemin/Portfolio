@@ -39,8 +39,15 @@
   cursor: default;
   animation: fadeInLetters 1.4s ease forwards;
 }
+.logo a {
+  display: flex;
+  gap: 0.03em;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 
-.logo span {
+.logo a span {
   opacity: 0;
   transform: translateY(10px);
   animation-fill-mode: forwards;
@@ -143,7 +150,6 @@
   .nav {
     position: fixed;
     top: 64px;
-    right: 0;
     background: var(--bg-dark);
     flex-direction: column;
     width: 100%;
@@ -169,6 +175,52 @@
     display: flex;
   }
 }
+/* Adaptation mobile plus poussée */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    line-height: 1.2;
+    gap: 0.1em;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .nav {
+    top: 58px;
+    max-width: 100%;
+    width: 100%;
+    height: calc(100vh - 58px);
+    overflow-y: auto;
+  }
+
+  .nav a {
+    font-size: 1.25rem;
+    padding: 0.75rem 0;
+  }
+}
+
+/* Responsive tablette portrait */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+
+  .nav {
+    gap: 2rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+}
+
 
 /* Animations */
 @keyframes gradientShift {

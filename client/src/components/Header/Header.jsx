@@ -24,9 +24,10 @@ export default function Header() {
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.logo} aria-label="Logo">
-        <span>A</span><span>r</span><span>t</span><span>h</span><span>u</span><span>r</span>
+        <a href='/'><span>A</span><span>r</span><span>t</span><span>h</span><span>u</span><span>r</span>
         <span></span>
         <span>G</span><span>u</span><span>i</span><span>l</span><span>l</span><span>e</span><span>m</span><span>i</span><span>n</span>
+        </a>
       </div>
       <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
         {navItems.map(({ label, href }, i) => (

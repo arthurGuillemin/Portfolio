@@ -52,6 +52,11 @@
   margin-bottom: 2rem;
   line-height: 1.5;
 }
+.Tagline a{
+  text-decoration: none;
+    color: #555;
+
+}
 
 .Buttons {
   display: flex;
@@ -193,3 +198,90 @@
   animation-delay: 0.4s;
   animation-fill-mode: both;
 }
+
+@media screen and (max-width: 768px) {
+  .HeroSection {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .Content {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .TextBlock {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .Greeting,
+  .Intro,
+  .Role {
+    font-size: 1.4rem;
+  }
+
+  .Name {
+    font-size: 2.2rem;
+  }
+
+  .Tagline {
+    font-size: 0.95rem;
+  }
+
+  .Buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PrimaryButton,
+  .SecondaryButton {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+
+  .Socials {
+    justify-content: center;
+  }
+
+  .ProfilePicWrapper {
+    width: 180px;
+    height: 180px;
+  }
+
+  .Wave {
+    height: 80px;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Greeting,
+  .Intro,
+  .Role {
+    font-size: 1.2rem;
+  }
+
+  .Name {
+    font-size: 1.8rem;
+  }
+
+  .Tagline {
+    font-size: 0.85rem;
+  }
+
+  .PrimaryButton,
+  .SecondaryButton {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .Socials img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
