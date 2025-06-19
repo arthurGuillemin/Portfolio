@@ -1,14 +1,13 @@
 :root{
-  /*Colors*/
-  --mainTextColor : #42446b ;
-  --headerTextColor: #666666;
-  --pink-600 : #E70FAA;
-  --blue-400 : #4F81F2;
-  --gradient : linear-gradient(#E70FAA , #4F81F2 );
-  --blue-dark: #1f3b9a;
-  --bg-light: rgba(255 255 255 / 0.15);
-  --bg-dark: rgba(31 59 154 / 0.9);
-  --glow: 0 0 8px rgba(79, 129, 242, 0.6);
+  --mainTextColor: #264653;                      
+  --terracota-600: #e76f51;      
+  --terracota-600-hover: #e14c27;                     
+  --blue-400: #f4a261;                           
+  --gradient: linear-gradient(135deg, #e76f51, #f4a261); 
+  --blue-dark: #1b3a4b;                          
+  --bg-light: rgba(234, 241, 212, 0.15);         
+  --bg-dark: rgba(38, 70, 83, 0.9);              
+  --glow: 0 0 8px rgba(231, 111, 81, 0.5);        
 
   /* fonts*/
   --font-family-poppins: "Poppins", sans-serif;
