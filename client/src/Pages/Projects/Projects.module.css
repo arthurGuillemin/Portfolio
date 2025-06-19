@@ -1,0 +1,13 @@
+@import '../../assets/token.css';
+
+.CardsContainer{
+  padding-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .CardsContainer{
+    padding-top: 1rem;
+  }
+}
